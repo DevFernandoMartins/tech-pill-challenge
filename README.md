@@ -456,22 +456,22 @@ npm run db:studio
 ├── proto/
 │   └── consorcio.proto          # Definições do protocolo gRPC
 ├── prisma/
-│   ├── schema.prisma           # Schema do banco de dados
-│   └── migrations/             # Migrações do banco
+│   ├── schema.prisma            # Schema do banco de dados
+│   └── migrations/              # Migrações do banco
 ├── src/
-│   ├── services/               # Camada de lógica de negócio
+│   ├── services/                # Camada de lógica de negócio
 │   │   ├── PersonService.ts
 │   │   ├── PlanService.ts
 │   │   └── ContractedPlanService.ts
 │   ├── types/
-│   │   └── grpc.ts            # Interfaces TypeScript
-│   ├── client.ts              # Implementação do cliente gRPC
-│   ├── test-client.ts         # Exemplos de uso
-│   ├── server.ts              # Servidor gRPC
-│   └── app.ts                 # Ponto de entrada da aplicação
-├── package.json               # Dependências e scripts
-├── tsconfig.json             # Configuração TypeScript
-└── README.md                 # Esta documentação
+│   │   └── grpc.ts              # Interfaces TypeScript
+│   ├── client.ts                # Implementação do cliente gRPC
+│   ├── test-client.ts           # Exemplos de uso
+│   ├── server.ts                # Servidor gRPC
+│   └── app.ts                   # Ponto de entrada da aplicação
+├── package.json                 # Dependências e scripts
+├── tsconfig.json                # Configuração TypeScript
+└── README.md                    # Esta documentação
 ```
 
 ### **Características Principais**
@@ -500,70 +500,6 @@ npm run db:studio
 - Separação clara de responsabilidades
 - Logging abrangente
 
-## 🧪 Testes
-
-### **Testes Manuais**
-```bash
-# Inicie o servidor
-npm run server
-
-# Em outro terminal, execute o cliente de teste
-npm run client
-```
-
-### **Saída Esperada dos Testes**
-```
-🚀 Testando Cliente gRPC Simples...
-
-👥 Testando Serviço de Pessoas:
-📋 Listando pessoas...
-Encontradas 10 pessoas (mostrando 5):
-  - Ana Silva (ana.silva@example.com)
-  - Bruno Souza (bruno.souza@example.com)
-  - Carla Mendes (carla.mendes@example.com)
-  - Diego Pereira (diego.pereira@example.com)
-  - Eduarda Lima (eduarda.lima@example.com)
-
-📋 Testando Serviço de Planos:
-📋 Listando planos...
-Encontrados 10 planos (mostrando 5):
-  - Consórcio Auto Básico (R$ 50.000,00)
-  - Consórcio Imobiliário Popular (R$ 150.000,00)
-  - Consórcio Moto Econômico (R$ 20.000,00)
-  - Consórcio Auto Premium (R$ 100.000,00)
-  - Consórcio Imobiliário Premium (R$ 300.000,00)
-
-📋 Testando Serviço de Planos Contratados:
-📋 Listando planos contratados...
-Encontrados 10 planos contratados (mostrando 5):
-  - Ana Silva - Consórcio Auto Básico (Ativo)
-  - Bruno Souza - Consórcio Imobiliário Popular (Contemplado)
-  - Carla Mendes - Consórcio Moto Econômico (Inadimplente)
-  - Diego Pereira - Consórcio Auto Premium (Ativo)
-  - Eduarda Lima - Consórcio Imobiliário Premium (Contemplado)
-
-✅ Todos os testes concluídos com sucesso!
-```
-
-## 🔍 Qualidade do Código
-
-### **Configuração TypeScript**
-- Modo estrito habilitado
-- Source maps para debug
-- Geração de arquivos de declaração
-- Sistema de módulos CommonJS
-
-### **Tratamento de Erros**
-- Respostas de erro graciosas
-- Códigos de status HTTP apropriados
-- Mensagens de erro detalhadas
-- Validação de restrições do banco
-
-### **Considerações de Performance**
-- Consultas eficientes ao banco
-- Pool de conexões
-- Paginação para grandes conjuntos de dados
-- Serialização otimizada de mensagens gRPC
 
 ## 🚀 Deploy
 
@@ -624,30 +560,3 @@ CMD ["npm", "start"]
 - Pronto para integração JWT
 - Estrutura de controle de acesso baseado em roles
 - Suporte a gerenciamento de chaves de API
-
-## 🤝 Contribuindo
-
-### **Fluxo de Desenvolvimento**
-1. Faça fork do repositório
-2. Crie uma branch de feature
-3. Implemente mudanças com testes
-4. Submeta um pull request
-5. Code review e merge
-
-### **Padrões de Código**
-- TypeScript modo estrito
-- Configuração ESLint
-- Formatação Prettier
-- Commits convencionais
-
-## 📚 Recursos Adicionais
-
-### **Documentação**
-- [Documentação Oficial gRPC](https://grpc.io/docs/)
-- [Documentação Prisma](https://www.prisma.io/docs/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-
-### **Ferramentas Utilizadas**
-- [Protocol Buffers](https://developers.google.com/protocol-buffers)
-- [Node.js gRPC](https://github.com/grpc/grpc-node)
-- [Prisma Studio](https://www.prisma.io/studio)
