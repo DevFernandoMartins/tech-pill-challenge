@@ -114,7 +114,7 @@
 
 1. **Clone o repositório**
 ```bash
-git clone <url-do-repositório>
+git clone https://github.com/DevFernandoMartins/tech-pill-challenge/tree/main
 cd GANHADOR-DA-NFT
 ```
 
