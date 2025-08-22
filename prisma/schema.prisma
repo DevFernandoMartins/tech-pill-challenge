@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -20,7 +19,7 @@ model Person {
   cpf     String @unique
   email   String @unique
   phone   String
-  plans   ContractedPlan[]
+  contracted_plans ContractedPlan[]
 }
 
 model Plan {
@@ -29,7 +28,7 @@ model Plan {
   credit_value         Int
   installments         Int
   admin_fee_percentage Int
-  contracts            ContractedPlan[]
+  contracted_plans     ContractedPlan[]
 }
 
 model ContractedPlan {
