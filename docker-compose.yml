@@ -10,3 +10,4 @@ services:
       - MYSQL_ROOT_PASSWORD=root_pass
     ports:
       - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
